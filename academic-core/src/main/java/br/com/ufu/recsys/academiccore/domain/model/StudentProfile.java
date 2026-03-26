@@ -40,6 +40,13 @@ public class StudentProfile {
         this.lastSyncedAt = LocalDateTime.now();
     }
 
+    public void updateHandle(String newHandle) {
+        if (newHandle == null || newHandle.trim().isEmpty()) {
+            throw new IllegalArgumentException("Codeforces handle cannot be empty or null");
+        }
+        this.handle = newHandle;
+    }
+
     public UUID getId() {
         return id;
     }

@@ -23,6 +23,8 @@ public class SyncStudentProfileUseCase implements SyncStudentProfilePort {
         StudentProfile profile = studentProfileRepositoryPort.findByUserId(userId)
                 .orElse(new StudentProfile(UUID.randomUUID(), userId, handle));
 
+        profile.updateHandle(handle);
+
         var stats = codeforcesApiPort.fetchUserStats(handle);
 
         if(stats != null){
