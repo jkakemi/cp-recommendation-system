@@ -19,6 +19,8 @@
 
 	<modules>
 		<module>identity-access</module>
+		<module>academic-core</module>
+		<module>competitive-core</module>
 	</modules>
 
 	<properties>

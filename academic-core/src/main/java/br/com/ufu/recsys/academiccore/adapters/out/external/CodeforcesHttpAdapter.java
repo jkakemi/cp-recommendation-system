@@ -5,7 +5,7 @@ import br.com.ufu.recsys.academiccore.domain.ports.out.CodeforcesApiPort;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestClient;
 
-@Component
+@Component("academicCodeforcesHttpAdapter")
 public class CodeforcesHttpAdapter implements CodeforcesApiPort {
 
     private final RestClient restClient;

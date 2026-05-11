@@ -16,6 +16,11 @@
     <dependencies>
         <dependency>
             <groupId>br.com.ufu.recsys</groupId>
+            <artifactId>competitive-core</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>br.com.ufu.recsys</groupId>
             <artifactId>academic-core</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
